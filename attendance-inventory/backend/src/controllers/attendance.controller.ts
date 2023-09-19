@@ -3,6 +3,7 @@ import { AttendanceService } from "../services";
 import { Attendance, Employee } from "../models";
 import { getPagingData } from "../helpers";
 import { Sequelize } from "sequelize";
+import { sequelize } from "../db";
 
 export class AttendanceController {
   private dayAttendanceService: AttendanceService;
@@ -16,7 +17,7 @@ export class AttendanceController {
       "id",
       "date",
       "employeeId",
-      [Sequelize.col("employee.name"), "employeeName"],
+      [sequelize.col("employee.name"), "employeeName"],
     ],
     include: [
       {
