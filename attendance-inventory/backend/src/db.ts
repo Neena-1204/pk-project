@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import path from "path";
 dotenv.config();
 
-export const sequelize = new Sequelize(
+export const Sequelize = new sequelize(
   "attendance-inventory-phase1",
   // "db",
   process.env.DBUSER ? process.env.DBUSER : "",
