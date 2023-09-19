@@ -1,9 +1,9 @@
 import { Department } from "./department";
 export interface Employee {
-  id: INTEGER;
+  id: number;
   name: string;
   empId: string;
   department?: Department;
-  mentorId?: INTEGER;
-  mentorName?: INTEGER;
+  mentorId?: number;
+  mentorName?: number;
 }

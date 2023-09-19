@@ -1,5 +1,5 @@
 export interface TransportBill {
-  id: INTEGER;
+  id: number;
   consigneeName: string;
   rcNo: string;
   gstin: string;
@@ -15,8 +15,8 @@ export interface TransportBill {
   goods: Goods[];
 }
 export interface Goods {
-  id: INTEGER;
+  id: number;
   description: string;
-  quantity: INTEGER;
-  totalAmount: INTEGER;
+  quantity: number;
+  totalAmount: number;
 }

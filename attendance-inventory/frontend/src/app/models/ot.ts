@@ -1,9 +1,9 @@
 export interface Ot {
-  id: INTEGER;
+  id: number;
   date: Date;
-  employeeId: INTEGER;
-  employeeName?: INTEGER;
-  hours: INTEGER;
+  employeeId: number;
+  employeeName?: number;
+  hours: number;
   isOt: boolean;
   isSunday: boolean;
 }

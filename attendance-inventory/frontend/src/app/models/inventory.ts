@@ -1,7 +1,7 @@
 export interface Inventory {
-  id: INTEGER;
+  id: number;
   material: string;
-  stock: INTEGER;
-  usage: INTEGER;
+  stock: number;
+  usage: number;
   unit: string;
 }
