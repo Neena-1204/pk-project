@@ -1,8 +1,8 @@
 export interface Department {
-  id: INTEGER;
+  id: number;
   name: string;
-  monthlySalary: INTEGER;
-  otSalary: INTEGER;
-  sundaySalary: INTEGER;
-  leaveDetection: INTEGER;
+  monthlySalary: number;
+  otSalary: number;
+  sundaySalary: number;
+  leaveDetection: number;
 }

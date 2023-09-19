@@ -1,10 +1,10 @@
 export interface Transaction {
-  id: INTEGER;
-  inventoryId: INTEGER;
+  id: number;
+  inventoryId: number;
   inventoryItem?: string;
   userName?: string;
-  userId?: INTEGER;
+  userId?: number;
   date: Date;
-  inward: INTEGER;
-  outward: INTEGER;
+  inward: number;
+  outward: number;
 }
